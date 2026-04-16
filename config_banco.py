@@ -1,7 +1,8 @@
-from flask import Flask, render_template, request, redirect, url_for, db
-from flask_sqlalchemy import SQLAlchemy, db
+from flask import Flask, render_template, request, redirect, url_for
+from flask_sqlalchemy import SQLAlchemy
 import os
 
+db = SQLAlchemy()
 
 # Modelo da Tabela
 class Pessoa(db.Model):
